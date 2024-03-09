@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Client Manager - Clients</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="/clients.html">Clientes</a></li>
+            <li><a href="/products.html">Productos</a></li>
+            <li><a href="/orders.html">Pedidos</a></li>
+        </ul>
+    </div>
+    <h1>Client Manager - Registro de cliente</h1>
+    <div class="form-container">
+        <div class="center-content">
+            <form action="/guardar-cliente" method="post" class="client-form" id="clientForm">
+                <div class="form-group">
+                    <label for="companyName">Razon Social:</label>
+                    <input type="text" id="companyName" name="companyName" required>
+                </div>
+                <div class="form-group">
+                    <label for="cellPhone">Telefono Celular:</label>
+                    <input type="text" id="cellPhone" name="cellPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="firstName">Nombre:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Apellido:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electronico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container"> <!-- Contenedor para centrar el botón -->
+        <button type="submit" class="add-button" id="submitButton">Agregar Cliente</button>
+    </div>
+    <script src="/ClientRegister.js"></script>
+</body>
+
+</html>

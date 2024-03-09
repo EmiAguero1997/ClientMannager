@@ -39,10 +39,11 @@
     .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas automáticas con un ancho mínimo de 300px */
-  gap: 150px; /* Espacio entre las tarjetas */
+  gap: 10px; /* Espacio entre las tarjetas */
   padding-left: 100px; /* Añadir espacio alrededor del contenedor */
   padding-right: 100px;
-  padding-top: ;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .client-item {
@@ -70,4 +71,65 @@ h1 {
   font-size: 2.5em; /* Tamaño de fuente del título */
   color: #333; /* Color del texto del título */
   margin-bottom: 20px; /* Espacio inferior */
+}
+
+.add-button {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  text-decoration: none;
+  font-size: 1.2em; /* Tamaño de fuente */
+  color: #fff; /* Color de texto */
+  background-color: #007bff; /* Color de fondo */
+  width: 200px; /* Ancho del botón */
+  height: 50px; /* Altura del botón */
+  border: none; /* Eliminar borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar cursor al pasar el mouse */
+  transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo */
+}
+
+.add-button:hover {
+  background-color: #0056b3; /* Cambiar color de fondo al pasar el cursor */
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  height: 100vh; /* Altura igual al 100% del viewport */
+}
+
+
+.client-form {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-content {
+  width: 100%;
+  max-width: 450px; /* Ancho máximo del formulario */
+  padding: 20px;
+}
+
+.form-group input
+{
+    width: 250px;
 }

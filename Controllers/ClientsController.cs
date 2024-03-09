@@ -59,7 +59,7 @@ namespace ClientMannager.Controllers
             {
                 var client = new Client(clientDTO);
                 _clientRepository.Save(client);
-                return Ok();
+                return Ok(client);
             }
             catch (Exception ex)
             {
