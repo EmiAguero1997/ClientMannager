@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Client Manager - Registro de producto</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="/clients.html">Clientes</a></li>
+            <li><a href="/products.html">Productos</a></li>
+            <li><a href="/orders.html">Pedidos</a></li>
+        </ul>
+    </div>
+    <h1 class="center-text">Client Manager - Registro de producto</h1>
+    <div class="form-container">
+        <div class="center-content">
+            <form action="/guardar-producto" method="post" class="product-form" id="productForm">
+                <div class="form-group">
+                    <label for="name">Nombre del producto:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Precio:</label>
+                    <input type="text" id="price" name="price" required>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container"> <!-- Contenedor para centrar el botón -->
+        <button type="submit" class="add-button" id="submitButton">Agregar Producto</button>
+    </div>
+    <script src="/ProductRegister.js"></script>
+</body>
+
+</html>

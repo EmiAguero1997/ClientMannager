@@ -1,135 +1,200 @@
  /* Estilos para la barra de navegación similar a Google */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+ }
 
-    .navbar {
-      background-color: #f8f8f8;
-      padding: 10px;
-      border-bottom: 1px solid #ddd;
-    }
+ .navbar {
+     background-color: #f8f8f8;
+     padding: 10px;
+     border-bottom: 1px solid #ddd;
+ }
 
-    .navbar ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-    }
+ .navbar ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+ }
 
-    .navbar li {
-      float: left;
-    }
+ .navbar li {
+     float: left;
+ }
 
-    .navbar li a {
-      display: block;
-      color: #333;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: bold;
-    }
+ .navbar li a {
+     display: block;
+     color: #333;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 14px;
+     font-weight: bold;
+ }
 
-    .navbar li a:hover {
-      background-color: #f1f1f1;
-    }
+ .navbar li a:hover {
+     background-color: #f1f1f1;
+ }
 
-    .grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas automáticas con un ancho mínimo de 300px */
-  gap: 10px; /* Espacio entre las tarjetas */
-  padding-left: 100px; /* Añadir espacio alrededor del contenedor */
-  padding-right: 100px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
+ .grid-container {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     /* Columnas automáticas con un ancho mínimo de 300px */
+     gap: 10px;
+     /* Espacio entre las tarjetas */
+     padding-left: 100px;
+     /* Añadir espacio alrededor del contenedor */
+     padding-right: 100px;
+     padding-top: 30px;
+     padding-bottom: 30px;
+ }
 
-.client-item {
-  border: 1px solid #ddd; /* Borde para cada tarjeta */
-  border-radius: 10px; /* Bordes redondeados */
-  padding: 20px; /* Espaciado interno */
-  background-color: #f9f9f9; /* Color de fondo */
+ .client-item {
+     border: 1px solid #ddd;
+     /* Borde para cada tarjeta */
+     border-radius: 10px;
+     /* Bordes redondeados */
+     padding: 20px;
+     /* Espaciado interno */
+     background-color: #f9f9f9;
+     /* Color de fondo */
+ }
 
-}
+ .client-item h2 {
+     margin-top: 0;
+     /* Eliminar margen superior del título */
+     font-size: 1.5em;
+     /* Tamaño de fuente del título */
+     color: #333;
+     /* Color del texto del título */
+ }
 
-.client-item h2 {
-  margin-top: 0; /* Eliminar margen superior del título */
-  font-size: 1.5em; /* Tamaño de fuente del título */
-  color: #333; /* Color del texto del título */
-}
+ .client-item p {
+     margin: 10px 0;
+     /* Espaciado entre párrafos */
+     font-size: 1.1em;
+     /* Tamaño de fuente del texto */
+     color: #666;
+     /* Color del texto */
+ }
 
-.client-item p {
-  margin: 10px 0; /* Espaciado entre párrafos */
-  font-size: 1.1em; /* Tamaño de fuente del texto */
-  color: #666; /* Color del texto */
-}
+ h1 {
+     text-align: center;
+     /* Centrar el título */
+     font-size: 2.5em;
+     /* Tamaño de fuente del título */
+     color: #333;
+     /* Color del texto del título */
+     margin-bottom: 20px;
+     /* Espacio inferior */
+ }
 
-h1 {
-  text-align: center; /* Centrar el título */
-  font-size: 2.5em; /* Tamaño de fuente del título */
-  color: #333; /* Color del texto del título */
-  margin-bottom: 20px; /* Espacio inferior */
-}
+ .add-button {
+     display: flex;
+     justify-content: center;
+     /* Centrar horizontalmente */
+     align-items: center;
+     /* Centrar verticalmente */
+     text-decoration: none;
+     font-size: 1.2em;
+     /* Tamaño de fuente */
+     color: #fff;
+     /* Color de texto */
+     background-color: #007bff;
+     /* Color de fondo */
+     width: 200px;
+     /* Ancho del botón */
+     height: 50px;
+     /* Altura del botón */
+     border: none;
+     /* Eliminar borde */
+     border-radius: 5px;
+     /* Bordes redondeados */
+     cursor: pointer;
+     /* Cambiar cursor al pasar el mouse */
+     transition: background-color 0.3s;
+     /* Transición suave al cambiar el color de fondo */
+ }
 
-.add-button {
-  display: flex;
-  justify-content: center; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
-  text-decoration: none;
-  font-size: 1.2em; /* Tamaño de fuente */
-  color: #fff; /* Color de texto */
-  background-color: #007bff; /* Color de fondo */
-  width: 200px; /* Ancho del botón */
-  height: 50px; /* Altura del botón */
-  border: none; /* Eliminar borde */
-  border-radius: 5px; /* Bordes redondeados */
-  cursor: pointer; /* Cambiar cursor al pasar el mouse */
-  transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo */
-}
+ .add-button:hover {
+     background-color: #0056b3;
+     /* Cambiar color de fondo al pasar el cursor */
+ }
 
-.add-button:hover {
-  background-color: #0056b3; /* Cambiar color de fondo al pasar el cursor */
-}
-
-.container {
-  display: flex;
-  justify-content: center; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
-  height: 100vh; /* Altura igual al 100% del viewport */
-}
+ .container {
+     display: flex;
+     justify-content: center;
+     /* Centrar horizontalmente */
+     align-items: center;
+     /* Centrar verticalmente */
+     height: 100vh;
+     /* Altura igual al 100% del viewport */
+ }
 
 
-.client-form {
-  display: grid;
-  grid-gap: 20px;
-}
+ .client-form {
+     display: grid;
+     grid-gap: 20px;
+ }
 
-.form-group {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-}
+ .product-form {
+     display: grid;
+     grid-gap: 20px;
+ }
 
-h1 {
-  text-align: center;
-  margin-bottom: 30px;
-}
+ .form-group {
+     display: grid;
+     grid-template-columns: 1fr auto;
+     align-items: center;
+ }
 
-.form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+ h1 {
+     text-align: center;
+     margin-bottom: 30px;
+ }
 
-.center-content {
-  width: 100%;
-  max-width: 450px; /* Ancho máximo del formulario */
-  padding: 20px;
-}
+ .form-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
 
-.form-group input
-{
-    width: 250px;
-}
+ .center-content {
+     width: 100%;
+     max-width: 450px;
+     /* Ancho máximo del formulario */
+     padding: 20px;
+ }
+
+ .form-group input {
+     width: 250px;
+ }
+
+ .product-item {
+     border: 1px solid #ddd;
+     /* Borde para cada tarjeta */
+     border-radius: 10px;
+     /* Bordes redondeados */
+     padding: 20px;
+     /* Espaciado interno */
+     background-color: #f9f9f9;
+     /* Color de fondo */
+ }
+
+ .product-item h2 {
+     margin-top: 0;
+     /* Eliminar margen superior del título */
+     font-size: 1.5em;
+     /* Tamaño de fuente del título */
+     color: #333;
+     /* Color del texto del título */
+ }
+
+ .product-item p {
+     margin: 10px 0;
+     /* Espaciado entre párrafos */
+     font-size: 1.1em;
+     /* Tamaño de fuente del texto */
+     color: #666;
+     /* Color del texto */
+ }

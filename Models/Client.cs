@@ -12,7 +12,7 @@
 
         public Client()
         {
-
+            
         }
 
         public Client(ClientCreateDTO client)
