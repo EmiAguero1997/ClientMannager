@@ -1,6 +1,6 @@
 ﻿using ClientMannager.Models;
 using Microsoft.EntityFrameworkCore;
-using OrderMannager.Repositories;
+using ClientMannager.Repositories;
 
 namespace ClientMannager.Repositories
 {

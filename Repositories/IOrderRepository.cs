@@ -1,6 +1,6 @@
 ﻿using ClientMannager.Models;
 
-namespace OrderMannager.Repositories
+namespace ClientMannager.Repositories
 {
     public interface IOrderRepository
     {
