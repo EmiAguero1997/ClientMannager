@@ -2,7 +2,8 @@
   "profiles": {
     "http": {
       "commandName": "Project",
-      "launchUrl": "index",
+      "launchBrowser": true,
+      "launchUrl": "clients.html",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
